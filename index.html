@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        html{
+            font-size: 32px;
+        }
+        :root{
+            --cian: #C6E9E3;
+            --blauosc: #345573;
+            --rosa: #FBC4C1;
+            --rosaosc: #E49994;
+            --blanc: #FFFFFF;
+            --negre: #202426;
+            --robotoslab: 'Roboto Slab', serif;
+            --roboto: 'Roboto', sans-serif;
+        }
+        .container{
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        body>header .container{
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-image: url(./img/pexels-moose-photos-1037992.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+        section{
+            height: 100%;
+            padding:  3em;
+    
+        }
+        footer{
+            height: 40vh;
+            padding: 3em;
+            background-color: var(--rosa);
+            
+        }
+       
+        section .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        section .container h3{
+            width: 100em;
+            
+          
+        }
+        #portades{
+            background-color: var(--blanc); 
+            
+        }
+        #dissenyadxrs{
+            background-color: var(--cian);
+        }
+        #social{
+            margin-top: 2em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+           
+          
+        }
+        #social a{
+            font-family: var(--roboto);
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        h1{
+            font-size: 3em;
+            font-family: var(--robotoslab);
+            font-weight: 700;
+            color: var(--blanc);
+        }
+        blockquote{
+            font-size: 0.7em;
+            font-family: var(--roboto);
+            font-weight: 400;
+            color: var(--blanc);
+        }
+        hgroup{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            text-align:flex-start;
+        }
+        h3{
+            font-family: var(--robotoslab);
+            margin-left: 2em;
+            text-decoration: underline;
+        }
+        nav{
+            font-family: var(--roboto);
+            display: flex;
+
+            justify-content: space-evenly;
+            font-size: 0.8em;
+        }
+        nav a{
+            font-size: 1em;
+            text-decoration: none;
+            color:var(--blauosc);
+            
+        }
+        /* CARD PORTADES */
+        .cover{
+            padding: 0.8em;
+            margin: 0.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 410px;
+            height: 410px;
+            /*flex-grow: 1;*/
+            background-color: var(--blanc);
+        }
+        .cover header{
+            font-size: 0.5em;
+            display: flex;
+            align-items: flex-end;
+     
+        }
+        .cover header h4{
+            font-family: var(--roboto);
+            font-size: 1em;
+            color: var(--rosaosc);
+            font-weight: 400;
+            margin-top: 20px;
+
+        }
+        .cover_img{
+            background-color:var(--blauosc);
+            overflow: hidden;
+            width: max-content;
+            height: 150px;
+            display: flex;
+            flex-grow: 1;
+        }
+        .cover_img img{
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            
+        }
+        /* CARD DISSENYADORXS */
+        .disseny{
+            padding: 0.8em;
+            margin: 0.5em;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            /*flex-grow: 1;*/
+            background-color: var(--beige);
+            align-items: center;
+            box-shadow: var(--marro) 2px, 2px, 10px
+        }
+        .disseny h4, blockquote{
+            text-align: center;
+        }
+        .disseny_img{
+            width: 200px;
+            height: 200px;
+            /*border-radius: 200px;*/
+        }
+        .disseny_img img{
+            border-radius: 200px;
+            object-fit: cover;
+            height: 100%;
+        }
+        /* .disseny header{}
+        .disseny header h3{} */
+
+        /*FOOTER*/
+        footer p{
+            width: 16%;
+        }
+        footer p:last-child{
+            background-color: violet;
+            width: 50%;
+            text-align: right;
+        }
+
+        @media (max-width:550px){
+            body{
+                font-size: 15px;
+            }
+        }
+ 
+
+      /* .bloc1{
+            display: flex;
+            flex-direction:row;
+            font-size: 0.5em;
+            /*width: 500px;
+            height:500px;*/
+        /* }  */
+
+       /* .bloc2{
+            display: flex;
+            flex-direction:row;
+            font-size: 0.5em;
+            /* width: 500px;
+            height:500px; */
+        /* } */
+        /*h4{
+            font-family: var(--roboto);
+            font-weight: 400;
+            align-items: center;*/
+        /* } */
+        #portades .container h3{
+            color: #FBC4C1;
+        }
+        #dissenyadxrs,#xarxes  .container h3{
+            color:#FFFFFF;
+        }
+
+        footer h3{
+            color:#FFFFFF;
+        }
+        header h5 {
+            font-family: var(--robotoslab);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>MÚSICA Y DISEÑO </h1>
+                <blockquote>
+                    "Colección de portadas de disco de música indie, centrándonos en el diseño gráfico" 
+                </blockquote>
+
+            </hgroup>
+            <nav>
+                <a href="#portades">PORTADAS</a>
+                <a href="#dissenyadxrs">DISEÑADORES</a>
+                <a href="#xarxes">REDES</a>
+            </nav>
+         </div>
+    </header>
+
+
+    <main> 
+        <section id="portades">
+                
+                <div class="container">
+                    <h3>PORTADAS</h3>
+                    <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/2008_undiaenelmundo_pucho.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>un día en el mundo</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/8_ivan_ferreiro_el_pensamiento_circular-portada.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>el pensamiento circular</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/izal_autoterapia-portada.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>autoterapia</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/2_lol_poeta halley.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>el poeta Halley</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/3_lori meyers_impronta.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>Impronta</h4>
+                    </header>
+                </div>
+
+
+
+
+            
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/supersubmarina_viento-de-cara.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>Viento de cara</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/4_manel_per_la_bona_gent-portada.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>Per la bona gent</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/6_zahara_santa-portada.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>Santa</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/portades/7_xoel_lopez_paramales-portada.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h4>Paramales</h4>
+                    </header>
+               
+                </div>
+        </section>
+
+
+        <section id="dissenyadxrs">
+            <div class="container">
+                <h3>DISEÑADORES</h3>
+            
+                <div class="disseny">
+                    <div class="disseny_img">
+                        <img src="img/dissenyadors/Ruben-Chumillas2.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h5>Ruben Chumillas</h5>
+                        <blockquote>"Los jóvenes se están empezando a convertir en productos y venderse como tales"</blockquote>
+                    </header>
+                </div>
+
+                <div class="disseny">
+                    <div class="disseny_img">
+                        <img src="img/dissenyadors/Javier-Jaen-03 (1).jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h5>Javier Jaén</h5>
+                        <blockquote>"Los jóvenes se están empezando a convertir en productos y venderse como tales"</blockquote>
+                    </header>
+                </div>
+
+                <div class="disseny">
+                    <div class="disseny_img">
+                        <img src="img/dissenyadors/emilio-lorente.jpeg.jpg" alt=""> 
+                    </div>
+                    <header>
+                        <h5>Emilio Lorente</h5>
+                        <blockquote>"Los jóvenes se están empezando a convertir en productos y venderse como tales"</blockquote>
+                    </header>
+                </div>
+            </div>    
+        </section>
+    </main>
+
+
+
+    <footer>
+        
+             <h3>REDES</h3>
+             <div id="social">
+                <a href="#footer">Twitter</a>
+                <a href="#footer">Instagram</a>
+                <a href="#footer">Facebook</a>
+                <a href="#footer">Email</a>
+            </div>
+          
+    </footer>
+
+</body>
+</html>
